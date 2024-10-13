@@ -1,0 +1,5 @@
+<div class="row">
+  <h1 *ngIf="gifs.length===0">Ingresa el Gift que quieras buscar</h1>
+  <app-card-show *ngFor="let gif of gifs" [gif]="gif"class="col-md-3 col-sm-6">
+  </app-card-show>
+</div>
